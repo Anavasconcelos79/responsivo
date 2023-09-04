@@ -25,6 +25,8 @@ nav a {
 }
 
 .container1  {
+    min-width: 300px;
+    max-height: 1028px;
     text-align: justify;
     display: flex;
     align-items: center;
@@ -49,8 +51,6 @@ h2 {
 
 li {
     list-style: none;
-    max-width: 25%;
-    padding: 20px;
     width: 220px;
     float: left;
 }
@@ -65,11 +65,9 @@ li p {
 }
 
 .produtos img {
-    height: 150px;
-    padding-left: 20px;
+    height: 200px;
+    padding: 20px;
 }
-
-
 
 button {
     background-color: #66796B;
@@ -80,7 +78,10 @@ button {
     padding-left: 10px;
 }
 
-@media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
+        .container1 {
+          flex-direction: column; /* Empilhar a imagem e o texto verticalmente */
+        }
+    }
 
-}
 
